@@ -38,9 +38,11 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 // Routes
 
-var routes = require("./controller/controller.js");
+// var routes = require("./controller/controller.js");
 
-app.use("/", routes);
+// app.use("/", routes);
+
+require("./routes/htmlRoutes")(app);
 
 
 // Start the server
