@@ -42,8 +42,13 @@ router.get("/scrape", function(req, res) {
           });
       });
   
-      // Send a message to the client
-      res.send("Scrape Complete");
+    //   var hbsArticleObject = {
+    //     articles: result
+    // };
+
+    console.log(hbsArticleObject);
+
+    res.render("index", hbsArticleObject);
     });
   });
   

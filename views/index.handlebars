@@ -35,7 +35,10 @@
 
     <div id="wrapper">
       <h1>Note Scraper</h1>
-      <h2><i>This is working.</i></h2>
+      <h2>This is working.</h2>
+       <p>{{#each articles}}
+       {{this.title}}
+       {{/each}}</p>
       <div id="articles"></div>
       <div id="notes"></div>
     </div>
